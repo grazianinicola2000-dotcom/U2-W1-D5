@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #191919;
+}
+/* HEADER MOBILE */
+header {
+  background-color: #ffc017;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #191919;
+  height: 70px;
+}
+
+#logo {
+  margin-left: 20px;
+}
+
+.navToHide {
+  display: none;
+}
+
+#navBar a {
+  text-decoration: none;
+}
+
+#navBar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+#navBar nav a {
+  font-size: 0.8rem;
+  color: #191919;
+}
+
+#navBar nav button {
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: none;
+  background-color: #191919;
+  color: white;
+  font-size: 0.7rem;
+}
+
+#navBar nav button:hover {
+  background-color: black;
+}
+
+#mContainer {
+  display: none;
+}
+
+#headerSecondSection {
+  display: flex;
+  border-bottom: 1px solid #191919;
+}
+
+#headerSecondSection article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 1.6rem;
+  letter-spacing: -0.06rem;
+  padding: 90px 20px;
+}
+
+#headerSecondSection h1 {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+}
+
+#headerSecondSection button {
+  width: 220px;
+  padding: 7px 0;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #191919;
+  color: white;
+}
+
+#headerSecondSection button:hover {
+  background-color: black;
+}
+
+/* HEADER TABLET */
+
+@media screen and (min-width: 768px) {
+  #headerSecondSection article {
+    flex-basis: 70%;
+  }
+
+  .navToHide {
+    display: block;
+  }
+
+  #mSider {
+    flex-shrink: 0;
+    transform: scale(1.2);
+  }
+
+  #mContainer {
+    display: flex;
+    align-self: stretch;
+    overflow: hidden;
+    flex-basis: 30%;
+    position: relative;
+  }
+}
+
+/* HEADER DESKTOP */
+
+@media screen and (min-width: 1200px) {
+  #navBar {
+    padding: 0 150px;
+  }
+
+  #headerSecondSection {
+    justify-content: space-between;
+  }
+
+  #headerSecondSection article {
+    padding-left: 190px;
+  }
+
+  #mContainer {
+    flex-basis: 40%;
+    justify-content: flex-start;
+  }
+}
+/* unico modo che mi è venuto in mente per evitare che si 'stacchi' da destra */
+@media screen and (min-width: 1900px) {
+  #mContainer {
+    justify-content: flex-end;
+  }
+}
