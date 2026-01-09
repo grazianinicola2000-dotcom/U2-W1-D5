@@ -195,7 +195,7 @@ main h3 {
 .username {
   display: flex;
   justify-content: flex-start;
-  align-self: center;
+  align-items: center;
   gap: 10px;
   margin: 10px 0;
 }
@@ -227,7 +227,7 @@ main h3 {
 }
 
 .trendingPostDescription p {
-  color: #b1b1b1;
+  color: #757677;
   font-size: 0.75rem;
 }
 
@@ -292,7 +292,7 @@ main h3 {
   font-size: 0.7rem;
   border: 0.5px solid #e6e7e7;
   text-decoration: none;
-  color: #b1b1b1;
+  color: #757677;
 }
 
 #relatedNavSection div {
@@ -306,12 +306,84 @@ main h3 {
   font-weight: 600;
   font-size: 0.7rem;
   text-decoration: none;
-  color: #b1b1b1;
+  color: #757677;
 }
 
 /* RELATED NAV SECTION TABLET */
 @media screen and (min-width: 768px) {
   #relatedNavSection {
+    margin: 0 5%;
+  }
+}
+
+/* RELATED NAV SECTION DESKTOP */
+
+/* RELATED POSTS SECTION MOBILE */
+
+#relatedPostSection {
+  margin: 0 15px;
+}
+
+.relatedPost {
+  margin: 0;
+  display: flex;
+}
+
+.relatedPostDescription h4 {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.relatedPostContent > p {
+  font-size: 0.8rem;
+  padding-right: 80px;
+  max-width: 80%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: #757677;
+  font-weight: 500;
+}
+
+.relatedPostFooter {
+  margin-top: 5px;
+  display: flex;
+  font-size: 0.65rem;
+  justify-content: space-between;
+  align-items: center;
+  color: #757677;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+}
+
+.tag {
+  background-color: #f3f3f3;
+  padding: 4px 6px;
+  border-radius: 10px;
+}
+
+.relatedPostFooter div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 4px;
+  align-items: center;
+  flex-basis: 60%;
+}
+
+.bookmark {
+  margin-right: 20px;
+}
+
+.relatedPostImg img {
+  width: 180px;
+}
+
+/* RELATED POST SECTION TABLET */
+
+@media screen and (min-width: 768px) {
+  #relatedPostSection {
     margin: 0 5%;
   }
 }
