@@ -74,7 +74,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   letter-spacing: -0.06rem;
   padding: 90px 20px;
 }
@@ -85,6 +85,10 @@ header {
   font-style: normal;
   font-size: 5rem;
   letter-spacing: -0.3rem;
+}
+
+#headerSecondSection h2 {
+  padding-right: 100px;
 }
 
 #headerSecondSection button {
@@ -150,5 +154,111 @@ header {
 @media screen and (min-width: 1900px) {
   #mContainer {
     justify-content: flex-end;
+  }
+}
+
+/* MAIN MOBILE*/
+main {
+  letter-spacing: 0.05rem;
+}
+main h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+  font-size: 0.75em;
+  margin-top: 35px;
+  padding: 5px 30px;
+  transform: translateX(-3.5px);
+}
+
+/* TRENDING POSTS MOBILE*/
+.trendingPost {
+  display: flex;
+  transform: translateX(-7px);
+  letter-spacing: -0.02rem;
+  padding: 0px 30px 18px 30px;
+}
+
+.trendingPostNumber {
+  font-size: 1.95rem;
+  font-weight: 800;
+  color: #e6e7e7;
+  margin-top: 5px;
+}
+
+.trendingPostContainer {
+  margin-left: 20px;
+}
+
+.username {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.username .name {
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePic {
+  width: 20px;
+  border-radius: 90px;
+}
+
+.trendingPostText {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.trendingPostDescription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trendingPostDescription p {
+  color: #b1b1b1;
+  font-size: 0.75rem;
+}
+
+#trendingSection {
+  border-bottom: 1px solid #e6e7e7;
+}
+
+/* TRENDING POSTS TABLET */
+
+@media screen and (min-width: 768px) {
+  #trendingTitle {
+    position: relative;
+    left: 9%;
+  }
+
+  #trendingSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .trendingPost {
+    width: 35%;
+  }
+}
+
+/* TRENDING POSTS DESKTOP */
+
+@media screen and (min-width: 1200px) {
+  .trendingPost {
+    width: 20%;
+    padding: 0px 5%;
   }
 }
