@@ -14,11 +14,32 @@ header {
 }
 
 #navBar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #191919;
   height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: background-color 1s linear;
+}
+
+.unscrolledNavBar {
+  background-color: #ffc017;
+}
+
+.unscrolledNavBtn {
+  background-color: #191919;
+}
+
+.scrolledNavBar {
+  background-color: white;
+}
+
+.scrolledNavBtn {
+  background-color: #1b8917;
 }
 
 #logo {
@@ -51,9 +72,9 @@ header {
   padding: 12px 16px;
   border-radius: 30px;
   border: none;
-  background-color: #191919;
   color: white;
   font-size: 0.7rem;
+  transition: background-color 1s linear;
 }
 
 #navBar nav button:hover {
@@ -67,6 +88,7 @@ header {
 #headerSecondSection {
   display: flex;
   border-bottom: 1px solid #191919;
+  padding-top: 70px;
 }
 
 #headerSecondSection article {
@@ -127,14 +149,15 @@ header {
     overflow: hidden;
     flex-basis: 30%;
     position: relative;
+    right: 0;
   }
 }
 
 /* HEADER DESKTOP */
 
 @media screen and (min-width: 992px) {
-  #navBar {
-    padding: 0 150px;
+  #logo {
+    padding: 0px 150px;
   }
 
   #headerSecondSection {
@@ -318,6 +341,9 @@ main h3 {
 
 /* RELATED NAV SECTION DESKTOP */
 
+@media screen and (min-width: 992px) {
+}
+
 /* RELATED POSTS SECTION MOBILE */
 
 #relatedPostSection {
@@ -325,11 +351,16 @@ main h3 {
 }
 
 .relatedPost {
+  width: 100%;
   margin: 0;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.relatedPostDescription {
+  flex-grow: 1;
 }
 
 .relatedPostDescription h4 {
@@ -351,6 +382,7 @@ main h3 {
 }
 
 .relatedPostFooter {
+  width: 100%;
   margin-top: 5px;
   display: flex;
   font-size: 0.65rem;
@@ -359,6 +391,7 @@ main h3 {
   color: #757677;
   font-weight: 400;
   letter-spacing: 0.02rem;
+  white-space: nowrap;
 }
 
 .tag {
@@ -377,6 +410,7 @@ main h3 {
 
 .bookmark {
   margin-right: 20px;
+  align-self: flex-end;
 }
 
 .relatedPostImg img {
@@ -388,5 +422,25 @@ main h3 {
 @media screen and (min-width: 768px) {
   #relatedPostSection {
     margin: 0 5%;
+  }
+}
+
+/* RELATED POST SECTION DESKTOP */
+
+@media screen and (min-width: 992px) {
+  #desktopLayout {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #trendingSection {
+    margin: 60px;
+  }
+
+  #relatedNavSection {
+    order: 1;
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
   }
 }
