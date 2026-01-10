@@ -326,7 +326,10 @@ main h3 {
 
 .relatedPost {
   margin: 0;
+  margin-bottom: 50px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .relatedPostDescription h4 {
