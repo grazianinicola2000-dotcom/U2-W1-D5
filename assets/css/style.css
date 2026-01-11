@@ -204,6 +204,14 @@ main h3 {
   padding: 0px 30px 18px 30px;
 }
 
+.trendingPostStar {
+  display: none;
+}
+
+.trendingPostDescriptionDot {
+  display: none;
+}
+
 .trendingPostNumber {
   font-size: 1.95rem;
   font-weight: 800;
@@ -283,6 +291,20 @@ main h3 {
   .trendingPost {
     width: 25%;
     padding: 0px 20px;
+  }
+
+  .trendingPostDescription {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .trendingPostDescriptionDot {
+    display: flex;
+  }
+
+  .trendingPostStar {
+    display: flex;
   }
 }
 
@@ -429,7 +451,7 @@ main h3 {
   }
 
   #trendingSection {
-    margin: 60px;
+    margin: 0px 60px 60px 60px;
   }
 
   #relatedNavSection {
